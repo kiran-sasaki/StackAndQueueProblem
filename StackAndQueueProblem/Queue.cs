@@ -44,5 +44,15 @@ namespace StackAndQueueProblem
                 temp = temp.next;
             }
         }
+        public void Dequeue()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("queue is empty");
+                return;
+            }
+            Console.WriteLine("\nvalue dequeued is {0}", this.head.data);
+            this.head = this.head.next;
+        }
     }
 }
