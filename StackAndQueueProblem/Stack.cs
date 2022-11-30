@@ -38,5 +38,35 @@ namespace StackAndQueueProblem
                 temp = temp.next;
             }
         }
+        //Method for returning the Top node
+        public void Peek()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("stack is empty");
+                return;
+            }
+            Console.WriteLine("\n{0} top of the stack", this.top.data);
+        }
+        //Method for deleting the Top node
+        public void Pop()
+        {
+            if (this.top == null)
+            {
+                Console.WriteLine("stack is empty");
+                return;
+            }
+            Console.WriteLine("value popped is {0}", this.top.data);
+            this.top = this.top.next;
+        }
+        //Method for returning and deleting the Top node until the stack is empty
+        public void IsEmpty()
+        {
+            while (this.top != null)
+            {
+                Peek();
+                Pop();
+            }
+        }
     }
 }
