@@ -9,6 +9,8 @@
             queue.Enqueue(70);
             queue.Enqueue(30);
             queue.Display();
+            queue.Dequeue();
+            queue.Display();
         }
     }
 }
