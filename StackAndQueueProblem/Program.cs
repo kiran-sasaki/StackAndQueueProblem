@@ -9,6 +9,9 @@
             stack.Insert(30);
             stack.Insert(56);
             stack.Display();
+            stack.Peek();
+            stack.Pop();
+            stack.IsEmpty();
         }
     }
 }
